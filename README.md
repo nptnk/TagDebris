@@ -9,6 +9,10 @@ local TagDebris = require(game.ReplicatedStorage.TagDebris)
 TagDebris:AddTag(Instance,Name,Duration) -- Will add a CollectionService tag for the duration specified, then it will be removed.
 TagDebris:AddTagWithValue(Instance,TagName,Value,ConvertToBoolOrNumber) -- Will add a tag with a value, you can get values from this tag now.
 TagDebris:GetTagWithValue(Instance,TagName) -- Will return the specified value that you set.
+
+--[[
+Note that you cannot get this tag with collectionService:HasTag() since the tag formats as so "tagName:Value"
+--]]
 ```
 
 ```lua
