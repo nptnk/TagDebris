@@ -16,6 +16,7 @@ Use GetTagWithValue almost as CollectionService:HasTag()
 example:
 
 if CollectionService:HasTag() then
+----------------------------------
 if GetTagWithValue() then
 --]]
 ```
