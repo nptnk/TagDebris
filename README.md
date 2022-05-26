@@ -16,7 +16,7 @@ TagDebris:UpdateDuration(Instance,TagName,Duration) -- Will update the duration 
 --[[ Value Tags ]]--
 TagDebris:AddTagWithValue(Instance,TagName,Value,ConvertToBoolOrNumber) -- Will add a tag with a value, you can get values from this tag now.
 TagDebris:GetTagWithValue(Instance,TagName) -- Will return the specified value that you set.
-
+TagDebris:RemoveTagWithValue(Instance,TagName)
 --[[
 Use GetTagWithValue almost as CollectionService:HasTag()
 
@@ -35,6 +35,7 @@ local duration = TagDebris:UpdateDuration(workspace.BasePart,"Deadly",5) -- > 5
 local value = TagDebris:GetTagWithValue(workspace.BasePart,"Age") -- Will return the specified value that you set, returns the value [36].
 if value == 36 then -- returned tonumber()
     print("Value is 36!!!")
+    local success = TagDebris:RemoveTagWithValue(workspace.BasePart,"Age")
 end
 
 local startTick = tick()
