@@ -20,4 +20,12 @@ local value = TagDebris:GetTagWithValue(Instance,TagName) -- Will return the spe
 if value == 36 then -- returned tonumber()
     print("Value is 36!!!")
 end
+
+game:GetService("RunService").Heartbeat:Connect(function()
+    if game:GetService("CollectionService"):HasTag(workspace.BasePart,"Deadly") then
+        print("Part is deadly!!!")
+    else
+        print("awww its been 3 seconds... no deadly")
+    end
+end)
 ```
