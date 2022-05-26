@@ -13,8 +13,6 @@ TagDebris:GetTagWithValue(Instance,TagName) -- Will return the specified value t
 --[[
 Use GetTagWithValue almost as CollectionService:HasTag()
 
-example:
-
 if CollectionService:HasTag() then
 ----------------------------------
 if GetTagWithValue() then
