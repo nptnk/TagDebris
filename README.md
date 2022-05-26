@@ -11,7 +11,12 @@ TagDebris:AddTagWithValue(Instance,TagName,Value,ConvertToBoolOrNumber) -- Will 
 TagDebris:GetTagWithValue(Instance,TagName) -- Will return the specified value that you set.
 
 --[[
-Note that you cannot get this tag with collectionService:HasTag() since the tag formats as so "tagName:Value"
+Use GetTagWithValue almost as CollectionService:HasTag()
+
+example:
+
+if CollectionService:HasTag() then
+if GetTagWithValue() then
 --]]
 ```
 
